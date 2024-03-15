@@ -116,7 +116,14 @@
             };
 
       document.body.appendChild(script);
-
+        
+		window.addEventListener('message', function(event) {
+            if (event.data === 'gameCompleted') {
+                // Handle game completion
+                console.log('Game has completed!');
+                // You can perform any action here upon receiving the 'gameCompleted' message
+            }
+        });
     </script>
   </body>
 </html>
