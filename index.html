@@ -122,6 +122,7 @@
 			if (event.data === 'isMobile') {
                 // Handle game completion
 
+					console.log('isMobile Web');
 				if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) 
 				{
 					console.log('MobileBrowser');
@@ -132,13 +133,12 @@
 				    console.log('WebBrowser');
 					unityInstance.SendMessage('[GameManager]', 'SetPcControls');
 				}
-				
-				
-				if (event.data === 'gameCompleted') {
-                // Handle game completion
-                console.log('Game has completed!');
-
             }
+			
+			if (event.data === 'gameCompleted') {
+			// Handle game completion
+			console.log('Game has completed!');
+
 
             }
 
