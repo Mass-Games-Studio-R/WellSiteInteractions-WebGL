@@ -143,6 +143,15 @@
             }
 
         });
+		
+		
+		
+		function functionInIframe() 
+		{
+          console.log('Function called from main index file!');
+		  unityInstance.SendMessage('[GameManager]', 'SetMobileControls');
+          // Add your function implementation here
+		}
 
 
     </script>
