@@ -122,7 +122,6 @@
 			if (event.data === 'isMobile') {
                 // Handle game completion
 
-					console.log('isMobile Web');
 				if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) 
 				{
 					console.log('MobileBrowser');
@@ -135,7 +134,7 @@
 				}
             }
 			
-			if (event.data === 'gameCompleted') {
+			else if (event.data === 'gameCompleted') {
 			// Handle game completion
 			console.log('Game has completed!');
 
@@ -144,19 +143,7 @@
 
         });
 		
-		
-		
-		function functionInIframe() 
-		{
-          console.log('Function called from main index file!');
-		  	
-                // Handle game completion
-
-				console.log('isMobile Web');
-
-          // Add your function implementation here
-		}
-
+	
 
     </script>
   </body>
