@@ -153,16 +153,7 @@
                 // Handle game completion
 
 				console.log('isMobile Web');
-				if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) 
-				{
-					console.log('MobileBrowser');
-					unityInstance.SendMessage('[GameManager]', 'SetMobileControls');
-				}
-				else
-				{
-				    console.log('WebBrowser');
-					unityInstance.SendMessage('[GameManager]', 'SetPcControls');
-				}
+
           // Add your function implementation here
 		}
 
